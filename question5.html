@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+		<div id="main">This is main class
+		<button class="target">this is target button</button>
+		</div>
+		<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#main > .target").css('font-size','30px');
+				console.log("font size has been changed");
+			});
+	});
+</script>
+	</body>
+</html>

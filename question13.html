@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quetion 12</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button>click on the button to check height</button>
+		<div></div>
+		<ul>
+			<li style="height: 50px">Coffee</li>
+			<li style="height: 60px">Milk</li>
+			<li style="height: 40px">Tea</li>
+			<li style="height: 70px">Cold Drink</li>
+		</ul>
+		<script>
+			$(document).ready(function(){
+				$("button").on("click",function(){
+					$("li").each(function(){
+						$("div").append($(this).text() +" height -->	 "+ $(this).height()+"<br/>");
+					})	
+				})
+		})
+		</script>
+	</body>
+</html>

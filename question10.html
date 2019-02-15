@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+<div id="menu">
+  <ul>
+    <li><a href="#">Link One</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Dropdown Link</a></li>
+        <li><a href="#">Another Dropdown Link</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<script>
+	$(document).ready(function(){
+  $("#menu li").hover(function(){
+    $(".dropdown-menu", this).stop().slideDown(100);
+  }, function(){
+    $(".dropdown-menu", this).stop().slideUp(100);
+  });
+})
+</script>
+	</body>
+</html>

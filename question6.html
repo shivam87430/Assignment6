@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+		<div id="main">This is main class</div>
+		<button>click to change the content of div tag</button>
+		<script>
+			var p1=$("<p></p>",{text:"this is a paragraph"})
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("div").html(p1);
+			});
+	});
+</script>
+	</body>
+</html>

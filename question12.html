@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quetion 12</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="parent">
+			<h2>hey this is parent</h2>	
+			<p id="child">this is child</p>
+			<p id="child1">this is another child on click parent is not running!!</p>
+		</div>
+		<script>	
+			$(document).ready(function(){
+				$("#parent").on("click",function(e){
+					if(e.target.tagName !== 'P'){
+					alert("div is clicked");
+				}
+		});
+	});
+		</script>
+	</body>
+</html>

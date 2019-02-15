@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+		<select style="font-size: 30px; width: 200px; height: 40px;">
+			<option>windows</option>
+			<option selected="selected">linux</option>
+			<option>unix</option>
+			<option selected="selected">mac os-x</option>
+			<option>microsoft</option>
+			<option selected="selected">android</option>
+		</select>
+		<div style="font-size: 30px;"></div>
+		<script>
+			$("select").change(function(){
+				var str="";
+				$("select option:selected").each(function(){
+					str += $(this).text() + "<br/>";
+				});
+				$("div").append(str);
+			})
+</script>
+	</body>
+</html>

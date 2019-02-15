@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+
+		<div class="color-new">Hey class is loaded</div>
+		<script>
+		$(document).ready(function(){
+			var colour=$("div[class$=-new]").css({'color':'red'});
+			console.log(colour);
+	});
+</script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quetion 12</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button>click on the button to change color of cell having value > 10</button>
+		<table border="1" width="50%">
+			<tr>
+				<td>key</td>
+				<td>Value</td>
+			</tr>
+			<tr>
+				<td>shivam</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>nitin</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>satyam</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>manidhar</td>
+				<td>23</td>
+			</tr>
+		</table>
+		<script>
+			$(document).ready(function(){
+				$("button").on("click",function(){
+					$("td").each(function(){
+						if(parseInt($(this).text())>10){
+							$(this).css('background-color','red');
+						}	
+					})
+					
+				})
+		})
+		</script>
+	</body>
+</html>

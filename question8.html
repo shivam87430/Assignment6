@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+	</head>
+	<body>
+		<div>Click on element<br/></div>
+		<br/>
+		<script>
+			var para=$("<p></p>",{text : "Now Button is working"});
+			var but=$("<button></button>",{text:"button is not working"});
+		$(document).ready(function(){
+			$("div").click(function(){
+				$("div").append(but);
+			});
+			$(function(){
+			$("button").click(function(){
+					$("div").after(para);
+	});
+		});
+		});
+</script>
+	</body>
+</html>

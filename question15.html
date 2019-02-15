@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quetion 12</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button>click me!!</button>
+		<div>Hey this is division!!</div>
+		
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$.ajax({
+					method: 'GET',
+					url: "https://jsonplaceholder.typicode.com/todos/6",
+					success: function(result){
+						console.log(result);
+					$("div").html(JSON.stringify(result))
+						}
+
+			})
+
+				})
+				
+		});
+		</script>
+	</body>
+</html>

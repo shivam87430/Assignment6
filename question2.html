@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<style>
+			.load{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p id=test>Hey class is loaded</p>
+		<script>
+		$(document).ready(function(){
+			var classIsLoad=$("#test").addClass("load");
+			console.log(classIsLoad);
+	});
+</script>
+	</body>
+</html>
